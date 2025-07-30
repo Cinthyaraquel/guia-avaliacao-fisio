@@ -637,4 +637,19 @@ label {
     font-size: 16px;
     padding: 12px 0;
   }
+@media (max-width: 768px) {
+  .image-desire {
+    display: flex; /* garantir que fique visível e flex */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .image-desire img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* limite para não ficar gigante */
+  }
+}
 }
