@@ -1,0 +1,640 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.body-page {
+  width: 100%;
+  /* Removi height: 100vh para evitar cortes em telas menores */
+}
+
+.header-body-page {
+  position: absolute;
+  width: 100%;
+}
+
+.header-body-page nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.header-body-page img {
+  width: 50px;
+  height: 50px;
+}
+
+.more-button {
+  width: 50px;
+  height: 50px;
+}
+
+.more-rectangle {
+  display: flex;
+  height: 5px;
+  margin: 5px;
+  border-radius: 8px;
+  background-color: #FD4C5C;
+}
+
+.capture-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #FCFBFF;
+  flex-wrap: wrap; /* Para quebrar em telas pequenas */
+}
+
+.background-capture-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-image: url(../images/background-capture-email.svg);
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.background-capture-email img {
+  max-width: 100%;
+  height: auto;
+  width: 450px;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.input-email-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 20px;
+  /* Remove form styles pois não há mais form */
+}
+
+.input-email-area h1 {
+  color: #FFDE77;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  line-height: 1;
+}
+
+.title-enfase {
+  font-size: 125px;
+  line-height: 1;
+  margin: 0;
+}
+
+/* --- Ajustes para área principal da captura/compra --- */
+
+/* Novo texto da oferta */
+.offer-text {
+  color: #6E7075;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.offer-text .old-price {
+  text-decoration: line-through;
+  color: #B0B0B0;
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+.offer-text .new-price {
+  color: #FD4C5C;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Botão novo de compra */
+.btn-buy {
+  background: #FD4C5C;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.btn-buy:hover {
+  background-color: #e04350;
+}
+
+.create-desire {
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/background-create-desire.svg);
+  padding: 40px 20px;
+  gap: 20px;
+  flex-wrap: wrap; /* Para que quebre em telas menores */
+  box-sizing: border-box;
+}
+
+.image-desire {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+}
+
+.image-desire img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 450px;
+  object-fit: contain;
+}
+
+.itens-desire {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 600px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.itens-desire h1 {
+  font-size: 50px;
+  color: #1F243A;
+  margin: 0 0 20px 0;
+}
+
+.itens-desire p {
+  color: #7B7B7C;
+  font-style: italic;
+  margin: 0 0 20px 0;
+  font-size: 18px;
+}
+
+.itens-desire ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.itens-desire span {
+  color: #FFDE77;
+  font-weight: bold;
+  font-size: 50px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.itens-desire li {
+  color: #1F253B;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.proof-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.proof-results h1 {
+  font-weight: bold;
+  color: #1F243A;
+  margin-bottom: 30px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.video-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/background-proof-results.svg);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-area iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.relato-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.relato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.relato p {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.relato h3 {
+  font-weight: normal;
+  font-size: 15px;
+  margin: 0;
+  color: #6a0dad;
+}
+
+.relato h4 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.services h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 40px;
+  color: #1F243A;
+  text-align: center;
+}
+
+.services h2 {
+  font-weight: normal;
+  margin: 10px 0 40px 0;
+  font-size: 20px;
+  color: #555;
+  text-align: center;
+}
+
+.services-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.services-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  height: 450px;
+  margin-top: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/background-services.svg);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.title-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.title-area img {
+  width: 30px;
+  height: 30px;
+}
+
+.title-area h3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #1F253B;
+  margin-left: 5px;
+}
+
+.services-item ol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 250px;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.services-item li {
+  font-weight: 500;
+  font-size: 17px;
+  color: #1F253B;
+  margin: 10px 0;
+}
+
+.services-item button {
+  height: 40px;
+  width: 200px;
+  background: #FD4C5C;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.services-item button:hover {
+  background-color: #e04350;
+}
+
+.garantia-img {
+  width: 40%;
+  max-width: 300px;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.depositions {
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.depositions h1 {
+  text-align: center;
+  margin: 50px 0;
+  font-weight: bold;
+  font-size: 30px;
+  color: #1F243A;
+}
+
+/* FAQ */
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: 0 auto 80px auto;
+}
+
+.faq h1 {
+  font-weight: bold;
+  font-size: 35px;
+  color: #1F243A;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.faq h2 {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.faq img {
+  width: 20px;
+  height: 20px;
+}
+
+.more-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  cursor: pointer;
+}
+
+/* Checkbox Hack */
+#toggle-1,
+#toggle-2,
+#toggle-3,
+#toggle-4 {
+  display: none;
+}
+
+label { 
+  -webkit-appearance: push-button;
+  -moz-appearance: button; 
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+}
+
+#mostra {
+  display: none;
+  font-size: 18px;
+  color: #7B7B7C;
+  max-width: 1000px;
+  padding: 0 15px 20px 15px;
+  box-sizing: border-box;
+}
+
+#toggle-1:checked ~ #mostra,
+#toggle-2:checked ~ #mostra,
+#toggle-3:checked ~ #mostra,
+#toggle-4:checked ~ #mostra {
+  display: block;
+}
+
+/* ====================== */
+/* RESPONSIVIDADE */
+/* ====================== */
+
+@media (max-width: 1024px) {
+  .create-desire {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .image-desire,
+  .itens-desire {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .itens-desire {
+    align-items: center !important;
+    padding: 10px 0 0 0;
+  }
+
+  .itens-desire h1 {
+    font-size: 36px;
+  }
+
+  .itens-desire p {
+    font-size: 16px;
+  }
+
+  .itens-desire li {
+    font-size: 16px;
+  }
+
+  .background-capture-email,
+  .input-email-area {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .input-email-area h1 {
+    font-size: 32px;
+  }
+
+  .title-enfase {
+    font-size: 60px;
+  }
+
+  .offer-text {
+    font-size: 18px;
+  }
+
+  .btn-buy {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+
+  .create-desire {
+    padding: 20px 10px;
+  }
+
+  .image-desire {
+    display: none;
+  }
+
+  .relato-area {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .relato {
+    width: 90%;
+  }
+
+  .services-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-item {
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: 30px;
+  }
+
+  .garantia-img {
+    width: 60%;
+  }
+
+  .faq {
+    padding: 20px 10px;
+  }
+
+  .more-icon {
+    width: 100%;
+  }
+
+  .input-email-area p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-email-area h1 {
+    font-size: 24px;
+  }
+
+  .title-enfase {
+    font-size: 40px;
+  }
+
+  .offer-text {
+    font-size: 16px;
+  }
+
+  .itens-desire h1 {
+    font-size: 28px;
+  }
+
+  .itens-desire p,
+  .itens-desire li {
+    font-size: 14px;
+  }
+
+  .services h1 {
+    font-size: 28px;
+  }
+
+  .services h2 {
+    font-size: 16px;
+  }
+
+  .services-item button {
+    width: 100%;
+  }
+
+  .btn-buy {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+}
